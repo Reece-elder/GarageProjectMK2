@@ -42,6 +42,8 @@ public class Garage {
 		float repairMod =0;
 		Boolean repairIssue1 = false;
 		Boolean repairIssue2 = false;
+		String repair1Name = "0";
+		String repair2Name = "0";
 		System.out.println(type);
 		
 		for (Vehicle obj : garage) {
@@ -54,6 +56,8 @@ public class Garage {
 					repairMod = 3f;
 				}
 				if (obj instanceof Car) {
+					repair1Name = "Four Wheel Drive";
+					repair2Name = "Quad Suspension";
 					if (((Car) obj).fourWD == true ) {
 						repairIssue1 = true;
 					} 
@@ -63,6 +67,8 @@ public class Garage {
 				} 
 				
 				if (obj instanceof Motorcycle) {
+					repair1Name = "Liquid Cooling";
+					repair2Name = "Side Car Attachment";
 					if (((Motorcycle) obj).liquidCooling == true) {
 						repairIssue1 = true;
 					} 
@@ -72,6 +78,8 @@ public class Garage {
 				} 
 				
 				if (obj instanceof Tank) {
+					repair1Name = "Turret Attachment";
+					repair2Name = "Full Tracks";
 					if (((Tank) obj).hasTurret == true) {
 						repairIssue1 = true;
 					} 
@@ -81,7 +89,7 @@ public class Garage {
 				} 
 				repairCost = (obj.value / 20) * repairMod;
 				System.out.println(obj.value);
-				System.out.println("Vehicle Repair Cost : " + "Condition : " + obj.condition + "  Special Repair 1? : " + repairIssue1 + "  Special Repair 2? : " + repairIssue2 + "  Final Repair cost modifier : " + repairMod);
+				System.out.println("Vehicle Repair Cost : " + "Condition : " + obj.condition + "    " + repair1Name + " : " + repairIssue1 + "    " +  repair2Name + " : " + repairIssue2 + "   Final Repair cost modifier : " + repairMod);
 				System.out.println("Vehicle Repair Cost : " + repairCost);
 			}
 			if (repairIssue1 == true) {
