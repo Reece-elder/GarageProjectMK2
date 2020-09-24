@@ -28,11 +28,6 @@ public class Runner {
 		garage.removeVehicle("Car");
 		garage.listGarage();
 		garage.emptyGarage();
-		//garage.addVehicle(motorcycle);
-		//garage.fixVehicle("Motorcycle");
-		//garage.removeVehicle("Car");
-		//garage.emptyGarage();
-
 
 	}
 

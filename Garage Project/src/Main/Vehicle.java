@@ -1,6 +1,6 @@
 package Main;
 
-public class Vehicle {
+public abstract class Vehicle {
 	
 	protected String model;
 	protected String colour;
@@ -25,10 +25,6 @@ public class Vehicle {
 				+ ", value=" + value + "]";
 	}
 	
-	public float calcRepair() {
-		
-		float bill = 50f;
-		return bill;
-	}
+	public abstract float calcRepair();
 
 }
