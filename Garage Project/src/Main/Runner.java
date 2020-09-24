@@ -18,9 +18,9 @@ public class Runner {
 		garage.addVehicle(motorcycle);
 		garage.addVehicle(tank);
 		garage.listGarage();
-		garage.fixVehicle("Car");
-		garage.fixVehicle("Motorcycle");
-		garage.fixVehicle("Tank");
+		garage.calcBill("car");
+		garage.calcBill("motorcycle");
+		garage.calcBill("tank");
 		garage.addVehicle(car2);
 		garage.addVehicle(motorcycle2);
 		garage.addVehicle(tank2);
