@@ -24,5 +24,11 @@ public class Vehicle {
 		return "Vehicle [model=" + model + ", colour=" + colour + ", condition=" + condition
 				+ ", value=" + value + "]";
 	}
+	
+	public float calcRepair() {
+		
+		float bill = 50f;
+		return bill;
+	}
 
 }
